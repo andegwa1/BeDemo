@@ -381,6 +381,7 @@ DEPENDENCIES
   faker (= 1.7.3)
   ffmpeg (~> 0.2.5)
   fog (= 1.40.0)
+  fog-aws (= 2.0.0)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   jbuilder (= 2.7.0)
