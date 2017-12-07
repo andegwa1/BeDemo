@@ -1,10 +1,20 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<nav class="navbar navbar-fixed-top navbar-inverse" style="color:white;">
   <div class="container">
-    <%= link_to "sample app", root_path, id: "logo" %>
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
+    
+    <%= link_to "Sample App", root_path, id: "logo" %>
+    </div>
+    
     <nav>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Help", help_path %></li>
+        
         <% if logged_in? %>
         <li><%= link_to "Users", users_path %></li>
           <li class="dropdown">
@@ -20,10 +30,14 @@
               </li>
             </ul>
           </li>
+          
         <% else %>
           <li><%= link_to "Log in", login_path %></li>
         <% end %>
+        
       </ul>
+      </div>
     </nav>
+    
   </div>
-</header>
+</nav>
