@@ -1,4 +1,4 @@
-# Link to the web app - https://afternoon-dusk-26185.herokuapp.com/
+Link to the web app - https://afternoon-dusk-26185.herokuapp.com/
 
 # Ruby on Rails Tutorial sample application
 
